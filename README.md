@@ -36,7 +36,7 @@ These environment variables can be set at run time to override their defaults.
 
 * JVM_OPTS "-Xms2560m -Xmx5120m"
 * MOTD "The Decursio Project - Expert-r1.0.5 Server Powered by Docker"
-* LEVEL world
+* LEVEL 
 
 ### Adding Minecraft Operators
 
