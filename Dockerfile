@@ -7,7 +7,7 @@ LABEL homepage.group=Minecraft
 LABEL homepage.name="The Decursio Project - Expert-r1.0.6"
 LABEL homepage.icon="https://media.forgecdn.net/avatars/553/92/637893326243672364.png"
 LABEL homepage.widget.type=minecraft
-LABEL homepage.widget.url=The-Decursio-Project:25565
+LABEL homepage.widget.url=udp://The-Decursio-Project:25565
 RUN apt-get update && apt-get install -y curl unzip && \
  adduser --uid 99 --gid 100 --home /data --disabled-password minecraft
 
