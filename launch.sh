@@ -12,9 +12,9 @@ else
 	exit 9
 fi
 
-if ! [[ -f 'Decursio%20Project%20-%20Expert-r1.0.7%20SERVER.zip' ]]; then
+if ! [[ -f 'Decursio%20Project%20-%20Expert-r1.0.8%20SERVER.zip' ]]; then
 	rm -fr config defaultconfigs kubejs mods scripts *.zip forge*.jar
-	curl -Lo 'Decursio%20Project%20-%20Expert-r1.0.7%20SERVER.zip' 'https://edge.forgecdn.net/files/6448/153/Decursio%20Project%20-%20Expert-r1.0.7%20SERVER.zip' && unzip -u -o 'Decursio%20Project%20-%20Expert-r1.0.7%20SERVER.zip' -d /data
+	curl -Lo 'Decursio%20Project%20-%20Expert-r1.0.8%20SERVER.zip' 'https://edge.forgecdn.net/files/6483/486/Decursio%20Project%20-%20Expert-r1.0.8%20SERVER.zip' && unzip -u -o 'Decursio%20Project%20-%20Expert-r1.0.8%20SERVER.zip' -d /data
 	DIR_TEST=$(find . -type d -maxdepth 1 | tail -1 | sed 's/^.\{2\}//g')
 	if [[ $(find . -type d -maxdepth 1 | wc -l) -gt 1 ]]; then
 		cd "${DIR_TEST}"
