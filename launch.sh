@@ -2,7 +2,7 @@
 
 set -x
 
-FORGE_VERSION=1.16.5-36.2.34
+FORGE_VERSION=1.16.5-36.2.33
 cd /data
 
 if ! [[ "$EULA" = "false" ]] || grep -i true eula.txt; then
@@ -12,9 +12,9 @@ else
 	exit 9
 fi
 
-if ! [[ -f 'Decursio%20Project%20-%20Expert-r1.0.9%20SERVER.zip' ]]; then
+if ! [[ -f 'Decursio%20Project%20Expert%20-%20PreRelease%2021.3%20SERVER.zip' ]]; then
 	rm -fr config defaultconfigs kubejs mods scripts *.zip forge*.jar
-	curl -Lo 'Decursio%20Project%20-%20Expert-r1.0.9%20SERVER.zip' 'https://edge.forgecdn.net/files/6522/296/Decursio%20Project%20-%20Expert-r1.0.9%20SERVER.zip' && unzip -u -o 'Decursio%20Project%20-%20Expert-r1.0.9%20SERVER.zip' -d /data
+	curl -Lo 'Decursio%20Project%20Expert%20-%20PreRelease%2021.3%20SERVER.zip' 'https://edge.forgecdn.net/files/3919/406/Decursio%20Project%20Expert%20-%20PreRelease%2021.3%20SERVER.zip' && unzip -u -o 'Decursio%20Project%20Expert%20-%20PreRelease%2021.3%20SERVER.zip' -d /data
 	DIR_TEST=$(find . -type d -maxdepth 1 | tail -1 | sed 's/^.\{2\}//g')
 	if [[ $(find . -type d -maxdepth 1 | wc -l) -gt 1 ]]; then
 		cd "${DIR_TEST}"
