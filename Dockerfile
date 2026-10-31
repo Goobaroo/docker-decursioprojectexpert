@@ -2,9 +2,9 @@
 
 FROM openjdk:8u312-jre
 
-LABEL version="1.1.0"
+LABEL version="1.1.1"
 LABEL homepage.group=Minecraft
-LABEL homepage.name="The Decursio Project - Expert-r1.1.0"
+LABEL homepage.name="The Decursio Project - Expert-r1.1.1-hotfix"
 LABEL homepage.icon="https://media.forgecdn.net/avatars/553/92/637893326243672364.png"
 LABEL homepage.widget.type=minecraft
 LABEL homepage.widget.url=udp://The-Decursio-Project:25565
